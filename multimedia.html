@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        /* Centering the multimedia content */
+        .container {
+            text-align: center;
+        }
+
+        /* Style buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Style for the audio and video players */
+        audio, video {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Style for titles */
+        .title {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        /* Optional: Make the page responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            p, .title {
+                font-size: 1em;
+            }
+            button {
+                width: 100%;
+                padding: 12px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="title">Welcome to the Multimedia Webpage</p>
+
+        <p>Biri marung</p>
+        <audio id="audio" src="multimedia/mr_pilato_ego_slimflow_tebogo_g_mashego_biri_marung_ft_dj_maphorisa_focalistic_scotts_maphuma_mp3_30838.mp3" controls></audio>
+        <br>
+        <button onclick="document.getElementById('audio').play()">Play</button>
+        <button onclick="document.getElementById('audio').pause()">Pause</button>
+        <button onclick="document.getElementById('audio').volume += 0.1">Volume Up</button>
+        <button onclick="document.getElementById('audio').volume -= 0.1">Volume Down</button>
+
+        <p class="title">BIRI MARUNG VIDEO</p>
+        <video src="multimedia/mr_pilato_ego_slimflow_tebogo_g_mashego_biri_marung_ft_dj_maphorisa_focalistic_scotts_maphuma_h264_30845.mp4" controls></video>
+        <br>
+        <button onclick="document.getElementById('video').play()">Play</button>
+        <button onclick="document.getElementById('video').pause()">Pause</button>
+        <button onclick="document.getElementById('video').volume += 0.1">Volume Up</button>
+        <button onclick="document.getElementById('video').volume -= 0.1">Volume Down</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input {
+            margin-top: 5px;
+            padding: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        </style>
+</head>
+<body>
+    <form action="Register" method="POST">
+        <label for="fullName">Full Names:</label>
+        <input type="text" name="name" id="name" required><br>
+    
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+    
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required><br>
+    
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" name="confirm_password" id="confirm_password" required><br>
+    
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required min="18"><br>
+    
+        <label for="gender">Gender:</label>
+        <fieldset>
+            <label for="male">Male:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="other">Other:</label>
+            <input type="radio" name="gender" id="other" value="other">
+        </fieldset><br>
+    
+        <button type="submit">Register</button>
+    </form>
+    
+</body>
+</html>
